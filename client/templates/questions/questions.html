@@ -1,0 +1,12 @@
+<template name="questions">
+    <ul class="accordion" data-accordion>
+        {{#each questions}}
+            <li class="accordion-navigation">
+                <a href="#panel1a-{{i}}">{{question}}</a>
+                <div id="panel1a-{{i}}" class="content">
+                    {{answer}}
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</template>
